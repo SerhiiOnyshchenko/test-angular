@@ -306,27 +306,43 @@
   <div class="card highlight-card card-small">
     <h1>{{ title }} is running!</h1>
   </div>
-  <div
-    class="card highlight-card card-small"
-    ng-app="myApp"
-    ng-controller="myCtrl"
-  >
-    <form>
-      <input type="number" ng-model="value1" ng-change="value2=value1" />
-      <select name="course" id="1">
+  <div class="card highlight-card card-small">
+    <div>
+      <input
+        #in1
+        type="number"
+        value="{{ result1 }}"
+        (input)="changefrom(c1.value, c2.value, in1.value)"
+      />
+      <select
+        #c1
+        name=""
+        id="contry1"
+        (change)="changefrom(c1.value, c2.value, in1.value)"
+      >
         <option value="USD">USD</option>
-        <option value="UA">UA</option>
+        <option value="UAH">UAH</option>
         <option value="EUR">EUR</option>
       </select>
       <span>to</span>
       <span> </span>
-      <input type="number" ng-model="value2" />
-      <select name="course" id="1">
+      <input
+        #in2
+        type="number"
+        value="{{ result2 }}"
+        (input)="changeto(c1.value, c2.value, in2.value)"
+      />
+      <select
+        #c2
+        name=""
+        id="contry1"
+        (change)="changeto(c1.value, c2.value, in2.value)"
+      >
         <option value="USD">USD</option>
-        <option value="UA">UA</option>
+        <option value="UAH">UAH</option>
         <option value="EUR">EUR</option>
       </select>
-    </form>
+    </div>
   </div>
 </div>
 
