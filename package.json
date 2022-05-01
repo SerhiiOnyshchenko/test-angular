@@ -7,7 +7,7 @@
     "start": "ng serve -o",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "deploy": "ng build --output-path --base-href /test-angular/",
+    "deploy": "ng build --output-path docs --base-href /test-angular/",
     "test": "ng test"
   },
   "private": true,
