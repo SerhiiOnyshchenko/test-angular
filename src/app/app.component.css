@@ -1,0 +1,103 @@
+/* .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #030303;
+} */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+input,
+select {
+	background: none;
+	border: 0;
+	color: #fff;
+}
+input:focus,
+select:focus {
+	outline: none;
+}
+
+.toolbar {
+	position: absolute;
+	top: 0;
+	background: #335;
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #eef;
+}
+.toolbar table {
+	width: 200px;
+	/* border: 1px solid white; */
+}
+
+td,
+th {
+	/* border: 1px solid white; */
+	padding: 5px;
+}
+.td-number {
+	text-align: end;
+}
+.converter {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+h1 {
+	color: #eef;
+	margin-bottom: 30px;
+}
+
+.box {
+	background: #335;
+	width: 180px;
+	margin: 0 auto 10px;
+	display: grid;
+	grid-template-columns: 100px 80px;
+	border-radius: 15px;
+}
+input {
+	padding-left: 10px;
+}
+select {
+	position: relative;
+	padding: 15px;
+}
+select option {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	right: 0;
+	background: #335;
+}
+.quer {
+	display: block;
+	width: 40px;
+	height: 40px;
+	margin: 0 auto 10px;
+	background-image: url(./arrow-mark.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
